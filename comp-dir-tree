@@ -1,2 +1,13 @@
 #!/bin/bash
 
+if [ "$#" -ne 2 ]; then
+    printf "Please input the directories to compare\n"
+else
+    printf "Starting comparison of $1 and $2\n"
+    mkdir ~/tmp
+    ls -lR1 $1 > ~/tmp/$1_tree.txt
+    ls -lR1 $2 > ~/tmp/$2_tree.txt
+    diff -ywB ~/tmp/$1_tree.txt ~/tmp/$2_tree.txt > ./comparison-$1-$2.txt
+    rm -rf ~/tmp
+    printf "\nComparison complete and placed at ./comparison-$1-$2.txt\n"
+fi
