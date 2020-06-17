@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cp ~cop4530p/LIB/$1/* ~/cop4530/$1
+cp ~/log-makefile/* ~/cop4530/$1

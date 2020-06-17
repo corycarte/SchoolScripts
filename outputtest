@@ -1,0 +1,6 @@
+#!/bin/bash
+mkdir functiontest
+mkdir functiontest/outputCatch
+$1.x > functiontest/outputCatch/$1result
+functiontest/$1_i.x > functiontest/outputCatch/$1example
+difz functiontest/outputCatch/$1

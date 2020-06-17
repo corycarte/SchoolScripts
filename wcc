@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+   echo 'no input'
+   exit
+fi
+
+echo 'lines words bytes file'
+wc $1
+head -1 $1
+tail -2 $1

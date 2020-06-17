@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "clang++ -std=c++11 -c -I . -I /home/courses/cop3330p/LIB/cpp $1.cpp"
+clang++ -std=c++11 -c -I. -I /home/courses/cop3330p/LIB/cpp $1.cpp 
+
