@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [ $# -eq 0]; then
-    echo 'no input'
-    exit
-fi
-
-printf "Copying $1\n"
-cp ~cop4530p/LIB/area51/$1 .

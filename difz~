@@ -1,3 +1,0 @@
-#!/bin/bash
-
-diff -a -s -Z $1result $1example

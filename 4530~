@@ -1,8 +1,0 @@
-#!/bin/bash
-
-printf "co4530 $1"
-co4530 $1
-printf "c4530 $1"
-c4530 $1
-printf "Clean"
-make clean

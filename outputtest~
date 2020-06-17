@@ -1,3 +1,0 @@
-#!/bin/bash
-mkdir functiontest
-$1.x > functiontest/$1result
